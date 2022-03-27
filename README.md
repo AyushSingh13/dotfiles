@@ -13,4 +13,7 @@ $ cd ~/.dotfiles
 
 $ stow tmux
 $ stow vim
+
+# For neovim, make sure to run :PlugInstall **after** running the stow command and starting up nvim for the first time
+$ stow nvim
 ```
