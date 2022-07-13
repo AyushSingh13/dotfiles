@@ -1,3 +1,5 @@
 require('singhayu/telescope')
 require('singhayu/lightline')
 require('singhayu/gitsigns')
+require('singhayu/lsp')
+require('singhayu/treesitter')

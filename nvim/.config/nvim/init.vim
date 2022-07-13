@@ -50,6 +50,19 @@ Plug 'tpope/vim-fugitive'
 " gitsigns
 Plug 'lewis6991/gitsigns.nvim'
 
+" Language Server Protocol
+Plug 'neovim/nvim-lspconfig'
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', { 'do': ':TSUpdate' }
+
+" Autocompletion
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'L3MON4D3/LuaSnip'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'onsails/lspkind-nvim'
+
 call plug#end()
 
 " -- Colorscheme
