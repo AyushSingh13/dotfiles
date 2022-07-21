@@ -75,3 +75,4 @@ lua require('singhayu')
 
 " remaps
 nnoremap <C-p> :Telescope find_files<Cr>
+nnoremap <C-f> :Telescope live_grep<Cr>
