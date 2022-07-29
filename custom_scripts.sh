@@ -15,8 +15,8 @@ time_label() {
 }
 
 db_backup() {
-    # $1 - Database Name e.g. srf
-    # $2 - Postgres Host e.g. nyzls540k
+    # $1 - Database Name
+    # $2 - Postgres Host
     # $3 - Postgres Host Password
     # TODO: Remove need to enter password
     FILE_NAME=$1_$2_$(date_label)_$(time_label).dump
@@ -25,9 +25,9 @@ db_backup() {
 }
 
 db_restore() {
-    # $1 - Backup Filename (e.g. srf_nyzls540k_2022_02_04_15_58_56.dump)
-    # $2 - Database Name (e.g. srf)
-    # $3 - Postgres Host (e.g. nyzls540k)
+    # $1 - Backup Filename (e.g. dbname_dbhost_2022_02_04_15_58_56.dump)
+    # $2 - Database Name
+    # $3 - Postgres Host
     # TODO: Automatically pickup latest dump for DB if file not given explicitly
     # TODO: Remove need to enter password
     echo "Using '$1' to restore to '$2' db on host '$3'"
