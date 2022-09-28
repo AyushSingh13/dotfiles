@@ -44,6 +44,10 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', {'do': 'make' }
 " Lightline
 Plug 'itchyny/lightline.vim'
 
+" Bufferline
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+
 " vim-fugitive
 Plug 'tpope/vim-fugitive'
 
