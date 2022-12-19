@@ -26,6 +26,7 @@ set noshowmode
 set updatetime=250 
 set encoding=UTF-8
 set mouse=a
+set laststatus=3 " have common statusline for all panes
 
 
 " --- Plugins
@@ -67,6 +68,10 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'onsails/lspkind-nvim'
 
+" nvim-tree
+Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+Plug 'nvim-tree/nvim-tree.lua'
+
 call plug#end()
 
 " -- Colorscheme
@@ -88,4 +93,5 @@ nnoremap <C-H> <C-W><C-H>
 nnoremap <C-p> :Telescope find_files<Cr>
 nnoremap <C-f> :Telescope live_grep<Cr>
 
-
+" -- nvim-tree Remaps
+nnoremap <C-\> :NvimTreeToggle<Cr>
